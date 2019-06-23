@@ -1,0 +1,7 @@
+<div class=".root" *ngIf="(show | async) as show">
+  <h1>{{show.name}}</h1>
+  <div [innerHTML]="show.summary"></div>
+  <div class="image" *ngIf="show.image"
+  [style.background-image]="'url(' + show.image.original + ')'"></div>
+
+</div>

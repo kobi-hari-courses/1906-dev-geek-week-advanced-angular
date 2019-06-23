@@ -1,7 +1,13 @@
 <div class="root">
   <div class="tools-area">
-    <button (click)="togglePreviow()">Toggle Preview</button>
+    <button (click)="togglePreview()">Toggle Preview</button>
+    <input type="search" #filter (input)="setFilter(filter.value)">
+    <div class="busy" *ngIf="isBusy | async" ></div>
   </div>
-  <div class="list-area"></div>
-  <div class="preview-area" *ngIf="isShowingPreview"></div>
+  <div class="list-area">
+    <app-shows-list></app-shows-list>
+  </div>
+  <div class="preview-area" *ngIf="isShowingPreview">
+    <app-show-details></app-show-details>
+  </div>
 </div>

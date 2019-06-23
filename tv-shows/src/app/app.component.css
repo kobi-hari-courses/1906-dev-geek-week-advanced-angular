@@ -10,7 +10,7 @@
 }
 
 .tools-area {
-    background: pink;
+    background: rgb(121, 121, 121);
     grid-row: 1;
     grid-column: 1/-1;
     display: flex;
@@ -19,15 +19,23 @@
 }
 
 .list-area {
+    display: grid;
     background: lightcyan;
     grid-row: 2;
     grid-column: 1;
 }
 
 .preview-area {
-    min-width: 800px;
-    background: lightgreen;
+    width: 600px;
+    background: rgb(138, 138, 138);
     grid-row: 2;
     grid-column: 2;
+}
+
+.busy {
+    background-image: url('https://i.gifer.com/Sa7Y.gif');
+    background-size: cover;
+    background-position: center center;
+    width: 80px;
 }
 

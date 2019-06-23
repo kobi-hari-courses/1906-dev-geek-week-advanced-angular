@@ -1,13 +1,18 @@
+export interface SearchResult {
+    score: number;
+    show:  Show;
+}
+
 export interface Show {
     id:           number;
     url:          string;
     name:         string;
     type:         Type;
     language:     Language;
-    genres:       Genre[];
+    genres:       string[];
     status:       Status;
-    runtime:      number | null;
-    premiered:    Date;
+    runtime:      number;
+    premiered:    Date | null;
     officialSite: null | string;
     schedule:     Schedule;
     rating:       Rating;
@@ -16,15 +21,15 @@ export interface Show {
     webChannel:   Network | null;
     externals:    Externals;
     image:        Image;
-    summary:      string;
+    summary:      null | string;
     updated:      number;
     _links:       Links;
 }
 
 export interface Links {
-    self:            Nextepisode;
-    previousepisode: Nextepisode;
-    nextepisode?:    Nextepisode;
+    self:             Nextepisode;
+    previousepisode?: Nextepisode;
+    nextepisode?:     Nextepisode;
 }
 
 export interface Nextepisode {
@@ -32,34 +37,9 @@ export interface Nextepisode {
 }
 
 export interface Externals {
-    tvrage:  number;
-    thetvdb: number;
-    imdb:    string;
-}
-
-export enum Genre {
-    Action = "Action",
-    Adventure = "Adventure",
-    Anime = "Anime",
-    Comedy = "Comedy",
-    Crime = "Crime",
-    Drama = "Drama",
-    Espionage = "Espionage",
-    Family = "Family",
-    Fantasy = "Fantasy",
-    History = "History",
-    Horror = "Horror",
-    Legal = "Legal",
-    Medical = "Medical",
-    Music = "Music",
-    Mystery = "Mystery",
-    Romance = "Romance",
-    ScienceFiction = "Science-Fiction",
-    Sports = "Sports",
-    Supernatural = "Supernatural",
-    Thriller = "Thriller",
-    War = "War",
-    Western = "Western",
+    tvrage:  number | null;
+    thetvdb: number | null;
+    imdb:    null | string;
 }
 
 export interface Image {
@@ -69,7 +49,7 @@ export interface Image {
 
 export enum Language {
     English = "English",
-    Japanese = "Japanese",
+    Mongolian = "Mongolian",
 }
 
 export interface Network {
@@ -79,33 +59,9 @@ export interface Network {
 }
 
 export interface Country {
-    name:     Name;
-    code:     Code;
-    timezone: Timezone;
-}
-
-export enum Code {
-    CA = "CA",
-    Fr = "FR",
-    GB = "GB",
-    Jp = "JP",
-    Us = "US",
-}
-
-export enum Name {
-    Canada = "Canada",
-    France = "France",
-    Japan = "Japan",
-    UnitedKingdom = "United Kingdom",
-    UnitedStates = "United States",
-}
-
-export enum Timezone {
-    AmericaHalifax = "America/Halifax",
-    AmericaNewYork = "America/New_York",
-    AsiaTokyo = "Asia/Tokyo",
-    EuropeLondon = "Europe/London",
-    EuropeParis = "Europe/Paris",
+    name:     string;
+    code:     string;
+    timezone: string;
 }
 
 export interface Rating {
@@ -113,34 +69,8 @@ export interface Rating {
 }
 
 export interface Schedule {
-    time: Time;
-    days: Day[];
-}
-
-export enum Day {
-    Friday = "Friday",
-    Monday = "Monday",
-    Saturday = "Saturday",
-    Sunday = "Sunday",
-    Thursday = "Thursday",
-    Tuesday = "Tuesday",
-    Wednesday = "Wednesday",
-}
-
-export enum Time {
-    Empty = "",
-    The0000 = "00:00",
-    The0900 = "09:00",
-    The1200 = "12:00",
-    The1300 = "13:00",
-    The2000 = "20:00",
-    The2030 = "20:30",
-    The2100 = "21:00",
-    The2130 = "21:30",
-    The2200 = "22:00",
-    The2230 = "22:30",
-    The2300 = "23:00",
-    The2330 = "23:30",
+    time: string;
+    days: string[];
 }
 
 export enum Status {
@@ -152,7 +82,5 @@ export enum Status {
 export enum Type {
     Animation = "Animation",
     Documentary = "Documentary",
-    Reality = "Reality",
     Scripted = "Scripted",
-    TalkShow = "Talk Show",
 }
