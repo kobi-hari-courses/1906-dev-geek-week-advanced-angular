@@ -1,0 +1,41 @@
+:host {
+    display: grid;
+}
+
+.root {
+    display: grid;
+    grid-template-rows: 40px 1fr;
+    grid-template-columns: 1fr auto;
+    transition: 1s;
+}
+
+.tools-area {
+    background: rgb(121, 121, 121);
+    grid-row: 1;
+    grid-column: 1/-1;
+    display: flex;
+    flex-direction: row;
+    padding: 4px;
+}
+
+.list-area {
+    display: grid;
+    background: lightcyan;
+    grid-row: 2;
+    grid-column: 1;
+}
+
+.preview-area {
+    width: 600px;
+    background: rgb(138, 138, 138);
+    grid-row: 2;
+    grid-column: 2;
+}
+
+.busy {
+    background-image: url('https://i.gifer.com/Sa7Y.gif');
+    background-size: cover;
+    background-position: center center;
+    width: 80px;
+}
+

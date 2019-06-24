@@ -1,0 +1,9 @@
+<div class="root">
+  <div *ngFor="let res of shows|async" class="item" 
+    (click)="selectItem(res)" 
+    [class.selected]="res=== (selected | async)">
+    <div class="show-image" *ngIf="res.image"
+      [style.background-image]="'url(' + res.image.medium + ')'"></div>
+    <div class="show-name">{{res.name}}</div>    
+  </div>
+</div>
