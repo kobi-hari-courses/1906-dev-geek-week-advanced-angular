@@ -1,0 +1,7 @@
+<div class="root">
+    <div *ngFor="let item of options" class="item" 
+    [class.nivchar]="item===selectedOption"
+        (click)="onSelect(item)">
+        {{item}}
+    </div>
+</div>

@@ -1,0 +1,25 @@
+:host {
+    display: grid;
+}
+
+.root {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+}
+
+.item {
+    border: 1px solid gray;
+    margin: 4px;
+    padding: 4px;
+    border-radius: 6px;
+    cursor: pointer;
+}
+
+.item:hover {
+    background: lightcyan;
+}
+
+.item.nivchar {
+    background: lightcoral;
+}

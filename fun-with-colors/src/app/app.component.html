@@ -1,0 +1,9 @@
+<div>
+  <input #searchBox (input)="search(searchBox.value)" type="search">
+</div>
+
+<div class="list">
+  <div class="item" *ngFor="let color of colors" [style.background-color]="color.code">
+    <span>{{color.displayName}}</span>
+  </div>
+</div>

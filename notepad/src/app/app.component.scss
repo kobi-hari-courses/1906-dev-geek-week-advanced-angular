@@ -1,0 +1,41 @@
+:host {
+    display: grid;
+}
+
+.root {
+    display: grid;
+    grid-template-rows: auto 300px 1fr auto;
+    grid-template-columns: repeat(3, 1fr);
+}
+
+.title-area {
+    grid-row: 1;
+    grid-column: 1 / -1;
+}
+
+.colors-area {
+    grid-row: 2;
+    grid-column: 1;
+}
+
+.fonts-area {
+    grid-row: 2;
+    grid-column: 2;
+}
+.sizes-area {
+    grid-row: 2;
+    grid-column: 3;
+}
+
+.text-area {
+    grid-row: 3;
+    grid-column: 1 / -1;
+    display: grid;
+}
+
+.tools-area{
+    grid-row: 4;
+    grid-column: 1 / -1;
+}
+
+

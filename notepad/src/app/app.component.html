@@ -1,0 +1,37 @@
+<div class="root">
+    <div class="title-area">Notepad!!!</div>
+    <div class="colors-area">
+        <app-string-selector 
+            [options]="colors"
+            [selectedOption]="selectedColor"
+            (selectionRequested)="selectColor($event)"
+            >
+        </app-string-selector>
+    </div>
+    <div class="sizes-area">
+            <app-string-selector 
+            [options]="sizes"
+            [selectedOption]="selectedSize"
+            (selectionRequested)="selectSize($event)"
+            >
+        </app-string-selector>
+    </div>
+    <div class="fonts-area">
+            <app-string-selector 
+            [options]="fonts"
+            [selectedOption]="selectedFont"
+            (selectionRequested)="selectFont($event)"
+            >
+        </app-string-selector>
+    </div>
+    <div class="text-area">
+        <textarea #textbox (input)="zeText=textbox.value"
+            [style.color]="selectedColor"
+            [style.font-family]="selectedFont"
+            [style.font-size]="selectedSize"
+        ></textarea>
+    </div>
+    <div class="tools-area">
+        <button [disabled]="!zeText" (click)="save()">Save</button>
+    </div>
+</div>
