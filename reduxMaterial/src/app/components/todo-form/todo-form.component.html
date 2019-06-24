@@ -1,0 +1,10 @@
+<form novalidate [formGroup]="form">
+  <mat-form-field>
+    <input matInput placeholder="Title" formControlName="title">
+  </mat-form-field>
+  <mat-slide-toggle formControlName="work">Work</mat-slide-toggle>
+  <mat-slide-toggle formControlName="payments">Payment</mat-slide-toggle>
+  <mat-slide-toggle formControlName="health">Health</mat-slide-toggle>
+</form>
+
+<button (click)="askForSave();" mat-raised-button color="primary">Add</button>

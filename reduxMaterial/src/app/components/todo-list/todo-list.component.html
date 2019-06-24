@@ -1,0 +1,26 @@
+<mat-grid-list [cols]="2" rowHeight="60vh">
+  <mat-grid-tile>
+    <mat-list>
+      <mat-list-item *ngFor="let item of todos">
+        <div>
+          <button color="primary" mat-raised-button (click)="askForComplete(item)"> DONE
+          </button>
+
+          <mat-icon *ngIf="item.work">work</mat-icon>
+          <mat-icon *ngIf="item.payments">payment</mat-icon>
+          <mat-icon *ngIf="item.health">directions_run</mat-icon>
+          {{item.title}}
+        </div>
+
+      </mat-list-item>
+    </mat-list>
+  </mat-grid-tile>
+  <mat-grid-tile>
+    <mat-list>
+      <mat-list-item *ngFor="let item of dones" class="done-item">
+          {{item.title}}
+          <mat-icon>done</mat-icon>
+      </mat-list-item>
+    </mat-list>
+  </mat-grid-tile>
+</mat-grid-list>
