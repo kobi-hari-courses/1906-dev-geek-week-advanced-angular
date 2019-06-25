@@ -1,0 +1,5 @@
+<input type="search" #searchBox 
+(input)="setFilter(searchBox.value)">
+<img 
+    *ngIf="isBusy$ | async"
+    src="https://i.ya-webdesign.com/images/svg-gear-transparent-background-3.gif">

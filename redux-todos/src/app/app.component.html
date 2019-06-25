@@ -1,0 +1,10 @@
+<app-layout>
+  <app-todo-form (saveRequested)="onSaveRequested($event)"></app-todo-form>
+  <app-todos 
+    [dones]="dones$ | async" [todos]="todos$ | async"
+    (markAsDone)="completeTodoItem($event)"
+    >
+  </app-todos>
+
+
+</app-layout>

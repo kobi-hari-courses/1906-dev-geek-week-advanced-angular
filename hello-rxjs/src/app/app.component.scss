@@ -1,0 +1,29 @@
+:host {
+    display: grid;
+}
+
+.root {
+    display: grid;
+    grid-template-columns: 400px 1fr;
+    grid-template-rows: 100px 1fr;
+}
+
+.toolbar-area {
+    display: flex;
+    flex-direction: row;
+    background: lightcyan;
+    grid-row: 1;
+    grid-column: 1 / -1;
+}
+
+.list-area {
+    display: grid;
+    grid-row: 2;
+    grid-column: 1;
+}
+
+.preview-area {
+    display: grid;
+    grid-row: 2;
+    grid-column: 2;
+}

@@ -1,0 +1,28 @@
+:host {
+    display: grid;
+    grid-template-rows: 0px;
+    overflow-y: auto;
+}
+
+.root {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-content: flex-start;
+}
+
+.item {
+    margin: 8px;
+    padding: 20px;
+    border: 1px solid black;
+    border-radius: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+}
+
+.item > span {
+    background: rgba(255, 255, 255, 0.459);
+    padding: 6px;
+}

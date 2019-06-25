@@ -1,0 +1,6 @@
+<h1>Preview!</h1>
+<div class="root" *ngIf="(color$ | async) as color">
+    <div class="main" [style.background-color]="color.code">
+        <h1>{{color.displayName}}</h1>
+    </div>
+</div>

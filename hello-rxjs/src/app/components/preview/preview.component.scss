@@ -1,0 +1,23 @@
+:host {
+    display: grid;
+}
+
+.root {
+    display: grid;
+}
+
+.main {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 20px;
+    border: 2px solid black;
+    border-radius: 20px;
+    box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.349);
+}
+
+h1 {
+    text-align: center;
+    padding: 10px;
+    background: rgba(255, 255, 255, 0.301);
+}

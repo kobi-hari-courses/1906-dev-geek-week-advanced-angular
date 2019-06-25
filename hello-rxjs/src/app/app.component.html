@@ -1,0 +1,15 @@
+<div class="root">
+    <div class="toolbar-area">
+        <app-tool-bar></app-tool-bar>
+        <button (click)="togglePreview()" >Toggle Preview</button>
+    </div>
+
+    <div class="list-area">
+        <app-list></app-list>
+    </div>
+
+    <div class="preview-area">
+        <app-preview 
+        *ngIf="showPreview"></app-preview>
+    </div>
+</div>
