@@ -5,8 +5,8 @@ This repository contains all the projects demonstrated during the 2 Angular sess
 ## Contact us
 
 These materials were given by:
-Shimon Dahan - shimond@any-techs.co.il
-Kobi Hari - hari@applicolors.com
+- Shimon Dahan - shimond@any-techs.co.il
+- Kobi Hari - hari@applicolors.com
 
 
 
