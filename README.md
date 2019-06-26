@@ -1,6 +1,10 @@
+<img src="https://github.com/kobi2294/dev-geek-week-19-angular/blob/master/presentations/Logo.png" data-canonical-src="https://github.com/kobi2294/dev-geek-week-19-angular/blob/master/presentations/Logo.png" height="100"><img src="https://github.com/kobi2294/dev-geek-week-19-angular/blob/master/presentations/Angular.png" data-canonical-src="https://github.com/kobi2294/dev-geek-week-19-angular/blob/master/presentations/Angular.png" height="100">
+
+
 # Angular @ Dev Geek Week 2019
-*By Shimon Dahan and Kobi Hari*
-*24,25/6/2019*
+*By Shimon Dahan and Kobi Hari (24-25/6/2019)*
+
+
 
 This repository contains all the projects demonstrated during the 2 Angular sessions in DevGeekWeek 2019 convention. You can find all projects written live, in addition to some extra material.
 
@@ -12,6 +16,7 @@ Please feel free to contact us with questions or just to have a chat :-)
 - Kobi Hari - hari@applicolors.com
 
 ## What will you find here?
+Here you can find the projects, and the documentation, that we provided during the sessions.
 These are the projects in this repository. 
 ### Legend:
 - **Basic** - Was introduced on the "Basic Angular" session on Monday
